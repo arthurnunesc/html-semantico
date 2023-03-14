@@ -29,37 +29,32 @@
                 <p>
                 </p><fieldset>
                     <legend>Campos a validar sin expresión regular</legend>
-    
                     <p>
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="carol@gmail.com">
                     </p>
                     <p>
-    
                         <label for="fecha">Fecha de nacimiento</label>
                         <input type="date" id="fecha" name="fecha">
                     </p>
                     <p>
-    
                         <label for="animales">Animales de compañia en casa</label>
                         <input type="number" id="animales" name="animales" min="0">
                     </p>
-    
                     <p>
-    
                         <label for="sobreti">Hablános un poco sobre ti, pero no mucho! 100 carácteres máximo</label>
                         <textarea id="sobreti" name="sobreti" maxlength="100"></textarea>
                     </p>
-    
-                    <p><input type="submit" value="Validar todos los campos"></p>
+                    <input type="submit" value="Validar todos los campos">
                 </fieldset>
             </form>
             <form>
                 <fieldset>
                     <legend>Campos a validar con expresión regular</legend>
-    
-                    <label for="dni">Un DNI de ocho números y una letra</label>
-                    <input type="text" id="dni" pattern="[0-9]{8}[A-Z]" placeholder="40534345P">
+                    <p>
+                        <label for="dni">Un DNI de ocho números y una letra</label>
+                        <input type="text" id="dni" pattern="[0-9]{8}[A-Z]" placeholder="40534345P">
+                    </p>
                     <p>
                         <label for="nie">Un NIE</label>
                         <input type="text" id="nie" pattern="[XYZ][0-9]{7}[A-Z]" placeholder="X1234567E">
